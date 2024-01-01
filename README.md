@@ -1,6 +1,6 @@
 # Linux Bash Scripts
 
-## Hi there!
+## Hi there
 
 ## Summary of this project
 

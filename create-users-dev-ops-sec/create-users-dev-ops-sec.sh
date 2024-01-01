@@ -18,17 +18,17 @@ groupadd SEC_GROUP
 
 printf "Creating users...\n"
 
-useradd developer1 -m -G DEV_GROUP -p $(openssl passwd -crypt putPasswordHere)
-useradd developer2 -m -G DEV_GROUP -p $(openssl passwd -crypt putPasswordHere)
-useradd developer3 -m -G DEV_GROUP -p $(openssl passwd -crypt putPasswordHere)
+useradd developer1 -m -G DEV_GROUP -p "$(openssl passwd -crypt putPasswordHere)"
+useradd developer2 -m -G DEV_GROUP -p "$(openssl passwd -crypt putPasswordHere)"
+useradd developer3 -m -G DEV_GROUP -p "$(openssl passwd -crypt putPasswordHere)"
 
-useradd operator1 -m -G OPS_GROUP -p $(openssl passwd -crypt putPasswordHere)
-useradd operator2 -m -G OPS_GROUP -p $(openssl passwd -crypt putPasswordHere)
-useradd operator3 -m -G OPS_GROUP -p $(openssl passwd -crypt putPasswordHere)
+useradd operator1 -m -G OPS_GROUP -p "$(openssl passwd -crypt putPasswordHere)"
+useradd operator2 -m -G OPS_GROUP -p "$(openssl passwd -crypt putPasswordHere)"
+useradd operator3 -m -G OPS_GROUP -p "$(openssl passwd -crypt putPasswordHere)"
 
-useradd security1 -m -G SEC_GROUP -p $(openssl passwd -crypt putPasswordHere)
-useradd security2 -m -G SEC_GROUP -p $(openssl passwd -crypt putPasswordHere)
-useradd security3 -m -G SEC_GROUP -p $(openssl passwd -crypt putPasswordHere)
+useradd security1 -m -G SEC_GROUP -p "$(openssl passwd -crypt putPasswordHere)"
+useradd security2 -m -G SEC_GROUP -p "$(openssl passwd -crypt putPasswordHere)"
+useradd security3 -m -G SEC_GROUP -p "$(openssl passwd -crypt putPasswordHere)"
 
 printf "Attributing the groups to the directories...\n"
 
