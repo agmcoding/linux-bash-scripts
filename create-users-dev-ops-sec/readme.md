@@ -42,7 +42,7 @@ SEC_GROUP
 The `useradd` commands create users, each one with a given group. For example:
 
 ```bash
-useradd developer1 -m -G DEV_GROUP -p $(openssl passwd -crypt putPasswordHere)
+useradd developer1 -m -G DEV_GROUP -p "$(openssl passwd -crypt putPasswordHere)"
 ```
 
 ... where
