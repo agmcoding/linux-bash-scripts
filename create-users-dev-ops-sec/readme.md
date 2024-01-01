@@ -52,7 +52,7 @@ useradd developer1 -m -G DEV_GROUP -p $(openssl passwd -crypt putPasswordHere)
  > **Note:** This option is not recommended because the password (or encrypted password) will be visible by users listing the processes.
 
 ... Therefore, this is just for making easier to switch between users with the given password. Right at `putPasswordHere` you can replace the password, or you can use another approach to create the password.
-* The command `openssl` is the OpenSSL command line tool for using the various cryptography functions of OpenSSL's *crypto* library from the shell. The OpenSSL itself is a cryptography toolkit implementing the Secure Socketes Layer (SSL v2/v3) and Transport Layer Security (TLS v1) network protocols and related cryptography standards required by them.
+* The command `openssl` is the OpenSSL command-line tool for using the various cryptography functions of OpenSSL's *crypto* library from the shell. The OpenSSL itself is a cryptography toolkit implementing the Secure Socketes Layer (SSL v2/v3) and Transport Layer Security (TLS v1) network protocols and related cryptography standards required by them.
  The `passwd` command (from the `openssl` commands) generates hashed passwords. The `-crypt` option means that the `passwd` command should use the *crypt* algorithm (default).
 * The `putPasswordHere` argument is where you can replace the password for the user. It is the last argument from the `openssl` command.
 
